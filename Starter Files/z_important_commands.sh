@@ -34,7 +34,14 @@ git push -u origin branch_name # configures remote branch (branch_name is usuall
 # How to Add a License to Your Project (Note: The repo should already have a LICENSE file)
 gh repo edit --add-license apache-2.0 # adds Apache 2.0 license to the repo
 
+# How to Set a Remote Branch as Default
+gh repo edit --default-branch master 
+
+# How to Delete a Remote Branch
+git push origin --delete branch-name 
+
 # How to Delete a Project
 cd ..
 rm -rf ./project_name.git # Deletes the local .git folder (deletes local)
  # To Delete Remote Repo, Go to GitHub and Delete the Repository From There
+ 
