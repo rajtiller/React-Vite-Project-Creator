@@ -12,14 +12,27 @@ npm run build # creates the dist/ folder
  # Then upload the dist/ folder to your hosting service 
  # (e.g. Netlify, Vercel, etc.)
 
-# How to Push Changes to a Remote Repository via CLI (terminal)
+# How to Push Changes to a Remote Repository via CLI (terminal-not recommended)
 gh auth login # Authenticate with GitHub CLI
-gh repo create REMOTE_REPO_NAME --public --license apache-2.0 --source=. --remote=origin --push
+gh repo create REMOTE-REPO-NAME --public --source=. --remote=origin --push
 
-# How to Set Your Remote Repository & Branch (assuming remote repo already exists)
-git remote set-url origin https://github.com/USERNAME/REMOTE_REPO_NAME.git # set the repo
+# How to Add Your Remote Repository & Branch (assuming remote repo already exists)
+git remote add origin https://github.com/USERNAME/REMOTE_REPO_NAME.git
+
+# How to Set Your Remote Branch
+git remote set-url origin https://github.com/USERNAME/REMOTE_REPO_NAME.git
+
+# How to Create a New Remote Branch
+git checkout -b new-branch-name # creates and switches to new branch
+git push -u origin new-branch-name # pushes and sets upstream
+
+# How to Set the Remote Branch
 git push -u origin branch_name # configures remote branch (branch_name is usually main or master)
+ # Note: branch_name should be the same name as your local branch
  # Note: the above command is identical to "git push --set-upstream origin branch_name"
+
+# How to Add a License to Your Project (Note: The repo should already have a LICENSE file)
+gh repo edit --add-license apache-2.0 # adds Apache 2.0 license to the repo
 
 # How to Delete a Project
 cd ..
