@@ -1,7 +1,9 @@
-# START BY RUNNING THIS SCRIPT (should launch the app)
-git init 
-repo_name="REMOTE-REPO-NAME"
+# START BY RUNNING THIS SCRIPT
 
+# These Commands Set up a New Repo
+# -------------------------------------------------------------------------------
+# git init 
+# repo_name="REMOTE-REPO-NAME"
 # git add .
 # git commit -m "initial commit"
 # gh repo create $repo_name --public --source=. --remote=origin --push
@@ -14,6 +16,7 @@ repo_name="REMOTE-REPO-NAME"
 # gh repo edit --default-branch master
 # git push origin --delete main 
 # # if you forget to rename $repo_name, you can run: gh repo rename NEW-REPO-NAME
+# --------------------------------------------------------------------------------
 
 npm install
-npm run dev
+npm run dev -- --open
