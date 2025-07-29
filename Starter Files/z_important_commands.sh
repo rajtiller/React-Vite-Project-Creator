@@ -12,7 +12,7 @@ npm run build # creates the dist/ folder
  # Then upload the dist/ folder to your hosting service 
  # (e.g. Netlify, Vercel, etc.)
 
-# How to Push Changes to a Remote Repository via CLI (terminal-not recommended)
+# How to Push Changes to a Remote Repository via CLI (terminal)
 gh auth login # Authenticate with GitHub CLI
 gh repo create REMOTE-REPO-NAME --public --source=. --remote=origin --push
 
@@ -32,7 +32,7 @@ git push -u origin branch_name # configures remote branch (branch_name is usuall
  # Note: the above command is identical to "git push --set-upstream origin branch_name"
 
 # How to Add a License to Your Project (Note: The repo should already have a LICENSE file)
-gh repo edit --add-license apache-2.0 # adds Apache 2.0 license to the repo
+gh repo edit --add-license apache-2.0
 
 # How to Set a Remote Branch as Default
 gh repo edit --default-branch master 
@@ -40,8 +40,11 @@ gh repo edit --default-branch master
 # How to Delete a Remote Branch
 git push origin --delete branch-name 
 
-# How to Delete a Project
+# How to Rename a Remote Repository
+gh repo rename NEW-REPO-NAME
+
+# How to Delete a Local Git Repository
 cd ..
-rm -rf ./project_name.git # Deletes the local .git folder (deletes local)
- # To Delete Remote Repo, Go to GitHub and Delete the Repository From There
+rm -rf ./project_name.git
+ # Note: To Delete Remote Repo, go to GitHub
  
