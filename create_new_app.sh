@@ -18,4 +18,4 @@ cp ../../../Project\ Creator/Starter\ Files/* .
 code . start_app.sh src/App.tsx src/main.tsx
 
 
-chmod +x start_app.sh
+chmod +x z_start_app.sh
