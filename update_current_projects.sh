@@ -5,4 +5,3 @@ for dir in ../Projects/*/*/; do
         cp ./Starter\ Files/* "$dir"
     fi
 done
-# Note: This assumes all projects are within a dir within the Projects folder (ex: Riddles)
