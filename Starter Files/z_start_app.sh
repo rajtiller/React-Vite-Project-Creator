@@ -1,6 +1,7 @@
 # START BY RUNNING THIS SCRIPT!
+# The script will remove error squiggles too.
 
-# These Commands Set up a New Repo
+# These Commands Set up a New Repo & Set up Remote Branch
 # -------------------------------------------------------------------------------
 # git init 
 # repo_name="REMOTE-REPO-NAME"

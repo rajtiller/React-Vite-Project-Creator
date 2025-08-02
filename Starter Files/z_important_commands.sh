@@ -50,4 +50,4 @@ gh repo rename NEW-REPO-NAME
 cd ..
 rm -rf ./project_name.git
  # Note: To Delete Remote Repo, go to GitHub
- 
+
