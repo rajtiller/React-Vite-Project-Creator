@@ -1,4 +1,4 @@
-# START BY RUNNING THIS SCRIPT
+# START BY RUNNING THIS SCRIPT!
 
 # These Commands Set up a New Repo
 # -------------------------------------------------------------------------------
