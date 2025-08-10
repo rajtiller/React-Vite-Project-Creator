@@ -1,3 +1,5 @@
+# eeventually add vitest automatically
+
 if [ -z "$1" ] || [[ "$1" =~ [A-Z] ]]; then
     echo "ERROR: Input project name has capital letters or is empty"
     exit 1
